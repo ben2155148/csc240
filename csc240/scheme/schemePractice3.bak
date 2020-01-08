@@ -1,0 +1,5 @@
+#lang scheme
+(define (add-rest lst)
+  (if (null? lst)
+      '()
+      (cons (+ (car lst) (add-rest (cdr lst))) (cdr lst))))
